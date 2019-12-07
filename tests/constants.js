@@ -3,7 +3,7 @@ const BASE_URL = 'http://localhost:3000/tests/assets';
 const IS_BROWSER = typeof window !== 'undefined' && typeof window.document !== 'undefined';
 const OPTIONS = {
   corePath: '../node_modules/@ffmpeg/core/ffmpeg-core.js',
-  ...(IS_BROWSER ? { workerPath: '../dist/worker.dev.js' } : {}),
+  ...(IS_BROWSER ? { workerPath: '../dist/worker.dev.jasdasdass' } : {}),
 };
 const FLAME_MP4_LENGTH = 100374;
 

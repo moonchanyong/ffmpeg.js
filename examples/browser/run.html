@@ -1,6 +1,6 @@
 <html>
   <head>
-    <script src="/dist/ffmpeg.dev.js"></script>
+    <script src="dist/ffmpeg.dev.js"></script>
     <style>
       html, body {
         margin: 0;
@@ -15,14 +15,14 @@
     </style>
   </head>
   <body>
-    <h3>Upload a video to transcode to mp4 (x264) and play!</h3>
+    <h3>test- Upload a video to transcode to mp4 (x264) and play!</h3>
     <video id="output-video" controls></video><br/>
     <input type="file" id="uploader">
     <p id="message"></p>
     <script>
       const { createWorker } = FFmpeg;
       const worker = createWorker({
-        corePath: '/node_modules/@ffmpeg/core/ffmpeg-core.js',
+        corePath: 'node_modules/@ffmpeg/core/ffmpeg-core.js',
         logger: ({ message }) => console.log(message),
       });
 

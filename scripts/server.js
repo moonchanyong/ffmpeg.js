@@ -11,7 +11,7 @@ const app = express();
 
 app.use('/', express.static(path.resolve(__dirname, '..')));
 app.use(cors());
-app.use(middleware(compiler, { publicPath: '/dist', writeToDisk: true }));
+app.use(middleware(compiler, { publicPath: './dist', writeToDisk: true }));
 
 
 const run = fs.readFileSync(path.resolve(__dirname, '..', 'examples', 'browser', 'run.html'));
