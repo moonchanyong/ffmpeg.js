@@ -25,7 +25,7 @@
     <script>
       const { createWorker } = FFmpeg;
       const worker = createWorker({
-        corePath: '../../node_modules/@ffmpeg/core/ffmpeg-core.js',
+        corePath: '/node_modules/@ffmpeg/core/ffmpeg-core.js',
         logger: ({ message }) => console.log(message),
       });
 
@@ -34,7 +34,7 @@
       const startRecording = () => {
         const rec = new MediaRecorder(webcam.srcObject);
         const chunks = [];
-        
+
         recordBtn.textContent = 'Stop Recording';
         recordBtn.onclick = () => {
           rec.stop();
